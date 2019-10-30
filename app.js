@@ -6,7 +6,7 @@ alert('Welcome, ' + visitorName + '!')
 
 var doYouWantToLearn = prompt("Do you want to learn about me?")
 console.log('Do you want to learn about me ' + visitorName + '?');
-if (doYouWantToLearn.toLowerCase () === 'yes') {
+if (doYouWantToLearn.toLowerCase () === 'yes' || doYouWantToLearn.toLowerCase () === 'y') {
     /*console.log('Great! Lets go!');*/
     alert('Great! Lets go!')
 } else {
@@ -15,7 +15,7 @@ if (doYouWantToLearn.toLowerCase () === 'yes') {
 }
 
 var caitsHometown = prompt("Is Cait from Gig Harbor")
-if (caitsHometown.toLowerCase () === 'yes') {
+if (caitsHometown.toLowerCase () === 'yes' || caitsHometown.toLowerCase () === 'y') {
     /*console.log('Correct!');*/
     alert('Correct!')
 } else {
@@ -24,16 +24,16 @@ if (caitsHometown.toLowerCase () === 'yes') {
 }
 
 var catName = prompt("Is Cait's cats name Bruce?")
-if (catName.toLowerCase () === 'yes') {
-    /*console.log ('Yes! His name is burce and he is great!');*/
-    alert ('Yes! His name is burce and he is great!')
+if (catName.toLowerCase () === 'yes' || catName.toLowerCase () === 'y') {
+    /*console.log ('Yes! His name is Bruce and he is great!');*/
+    alert ('Yes! His name is Bruce and he is great!')
 } else {
     /*console.log ('WRONG! His name is Bruce and he is amazing!');*/
     alert('WRONG! His name is Bruce and he is amazing!')
 }
 
 var college = prompt ("Did Cait go to Idaho State?")
-if (college.toLowerCase () === 'no') {
+if (college.toLowerCase () === 'no' || college.toLowerCase() === 'n') {
    /* console.log('Yes ' + visitorName + '. You are so smart!');*/
    alert ('Yes ' + visitorName + '. You are so smart!')
 } else {
@@ -42,16 +42,16 @@ if (college.toLowerCase () === 'no') {
 }
 
 var collegeSport = prompt ("Did Cait play soccer in college?")
-if (collegeSport.toLowerCase () === 'no') {
-    /*console.log ('Not quite! She ran track in college');*/
-    alert('Not quite! She ran track in college')
-} else {
+if (collegeSport.toLowerCase () === 'yes' || collegeSport.toLowerCase () === 'y') {
     /*console.log ('You are right! She ran track!');*/
     alert('You are right! She ran track!')
+} else {
+    /*console.log ('Not quite! She ran track in college');*/
+    alert('Not quite! She ran track in college')
 }
 
 var favHobbie = prompt ("Does Cait hate boating?")
-if (favHobbie.toLowerCase () === 'no') {
+if (favHobbie.toLowerCase () === 'no' || favHobbie.toLowerCase() === 'n') {
     /*console.log ('So so wrong! She loves boating');*/
     alert ('So so wrong! She loves boating')
 } else {
