@@ -26,35 +26,36 @@ if (caitsHometown.toLowerCase () === 'yes' || caitsHometown.toLowerCase () === '
 var catName = prompt("Is Cait's cats name Bruce?")
 if (catName.toLowerCase () === 'yes' || catName.toLowerCase () === 'y') {
     /*console.log ('Yes! His name is Bruce and he is great!');*/
-    alert ('Yes! His name is Bruce and he is great!')
+    alert('Yes! His name is Bruce and he is great!')
 } else {
     /*console.log ('WRONG! His name is Bruce and he is amazing!');*/
     alert('WRONG! His name is Bruce and he is amazing!')
 }
 
 var college = prompt ("Did Cait go to Idaho State?")
-if (college.toLowerCase () === 'no' || college.toLowerCase() === 'n') {
+if (college.toLowerCase () === 'no' || college.toLowerCase () === 'n') {
    /* console.log('Yes ' + visitorName + '. You are so smart!');*/
-   alert ('Yes ' + visitorName + '. You are so smart!')
+   alert('Yes ' + visitorName + '. You are so smart!')
 } else {
     /*console.log ('Common ' + visitorName + '! You should know this! U of I is where it is at!');*/
     alert('Common ' + visitorName + '! You should know this! U of I is where it is at!')
 }
 
 var collegeSport = prompt ("Did Cait play soccer in college?")
-if (collegeSport.toLowerCase () === 'yes' || collegeSport.toLowerCase () === 'y') {
-    /*console.log ('You are right! She ran track!');*/
-    alert('You are right! She ran track!')
+if (collegeSport.toLowerCase () === 'no' || collegeSport.toLowerCase () === 'n') {
+    /*console.log ('You are right + visitorName! She ran track!');*/
+    alert('You are right ' + visitorName + '! She ran track!')
 } else {
-    /*console.log ('Not quite! She ran track in college');*/
+    /*console.log ('Not quite! She ran track in college')*/
     alert('Not quite! She ran track in college')
 }
 
 var favHobbie = prompt ("Does Cait hate boating?")
-if (favHobbie.toLowerCase () === 'no' || favHobbie.toLowerCase() === 'n') {
-    /*console.log ('So so wrong! She loves boating');*/
-    alert ('So so wrong! She loves boating')
+if (favHobbie.toLowerCase () === 'no' || favHobbie.toLowerCase () === 'n') {
+    /*console.log ('Correct! She is out on the water all summer long') */
+    alert('Correct! She is out on the water all summer long')
 } else {
-    /*console.log ('Correct! She is out on the water all summer');*/
-    alert ('Correct! She is out on the water all summer')
+    /*console.log ('So so wrong! She loves boating!') */
+    alert('So so wrong! She loves boating!')
 }
+
