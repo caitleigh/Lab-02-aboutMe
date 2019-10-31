@@ -59,3 +59,4 @@ if (favHobbie.toLowerCase () === 'no' || favHobbie.toLowerCase () === 'n') {
     alert('So so wrong! She loves boating!')
 }
 
+alert ('Thanks for playing! Cait sounds pretty cool, right ' + visitorName + '?')
