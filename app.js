@@ -91,20 +91,10 @@ while (maxCount > 0) {
 
 //7th question //
 
-var maxAnswers = 6;
-var topSongs = ['Feel It', 'Nerd', 'Always Waiting', 'High Beams', 'Oops I did It Again', 'Water', 'Lucid'];
-while (maxAnswers > 0) {
-  if (maxAnswers === 1) {
-    alert([] + ' is correct!');
-    break;
-  } if else (maxAnswers > 0) {
-    alert('Wrong... guess again');
-  } else (maxAnswers === [0]) {
-    alert
-  }
-  break;
-}
+var topSongs = prompt ('What are Caits top songs on Spotify?');
+var listOfSongs = ['Feel It', 'Nerd', 'Always Waiting', 'High Beams', 'Oops I did It Again', 'Water', 'Lucid'];
+for (var i = 0; i < i a++) {
+
 
 //final message//
 alert('Thanks for playing! Cait sounds pretty cool, right ' + visitorName + '?');
-
