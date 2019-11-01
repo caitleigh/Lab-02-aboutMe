@@ -91,9 +91,23 @@ while (maxCount > 0) {
 
 //7th question //
 
-var topSongs = prompt ('What are Caits top songs on Spotify?');
-var listOfSongs = ['Feel It', 'Nerd', 'Always Waiting', 'High Beams', 'Oops I did It Again', 'Water', 'Lucid'];
-for (var i = 0; i < i a++) {
+var topSongs = prompt ('What are Caits top songs on Spotify?').toLowerCase;
+var listOfSongs = ['feel it', 'nerd', 'always waiting', 'high beams', 'oops i did it again', 'water', 'lucid'];
+for (var i = 0; i < listOfSongs.length ; i++) {
+  if (topSongs === listOfSongs.indexOf (0, 2, 3)) {
+    alert('That is correct!');
+    break;
+  } else if (topSongs === listOfSongs.indexOf (2)) {
+    alert ('You are right!');
+    break;
+  } else if (topSongs === listOfSongs.indexOf (3)) {
+    alert ('Spot on!');
+    break;
+  } else {
+    alert('Not quite. Guess again!');
+
+  }
+}
 
 
 //final message//
