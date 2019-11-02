@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 
 
@@ -7,58 +8,76 @@ console.log ('Visitors name' + visitorName);
 alert('Welcome, ' + visitorName + '!');
 
 // //Asking if they would like to learn about me//
-// var doYouWantToLearn = prompt('Do you want to learn about me?').toLowerCase;
+// var doYouWantToLearn = prompt('Do you want to learn about me?').toLowerCase();
 // console.log('Do you want to learn about me ' + visitorName + '?');
+// console.log(doYouWantToLearn);
+
 // if (doYouWantToLearn === 'yes' || doYouWantToLearn === 'y') {
-//   /*console.log('Great! Lets go!');*/
+//   console.log(doYouWantToLearn);
+//   console.log('Great! Lets go!'+ doYouWantToLearn);
 //   alert('Great! Lets go!');
 // } else {
-//   /*console.log('Too bad... you are going to learn today');*/
+//   console.log('Too bad... you are going to learn today');
 //   alert('Too bad... you are going to learn today');
 // }
 
-// //first question//
-// var caitsHometown = prompt('Is Cait from Gig Harbor').toLowerCase;
-// if (caitsHometown === 'yes' || caitsHometown === 'y') {
+//first question//
+// function hometown() {
+//   var caitsHometown = prompt('Is Cait from Gig Harbor').toLowerCase();
+//   if (caitsHometown === 'yes' || caitsHometown === 'y') {
 //   /*console.log('Correct!');*/
-//   alert('Correct!');
-// } else {
+//     alert('Correct!');
+//   } else {
 //   /*console.log('Oops, not quite. She IS from Gig Harbor');*/
-//   alert('Oops, not quite. She IS from Gig Harbor');
+//     alert('Oops, not quite. She IS from Gig Harbor');
+//   }
 // }
+// hometown();
+
 
 // //second question//
-// var catName = prompt('Is Cait\'s cats name Bruce?').toLowerCase;
-// if (catName === 'yes' || catName === 'y') {
+// function bruce () {
+//   var catName = prompt('Is Cait\'s cat\'s name Bruce?').toLowerCase();
+//   if (catName === 'yes' || catName === 'y') {
 //   /*console.log ('Yes! His name is Bruce and he is great!');*/
-//   alert('Yes! His name is Bruce and he is great!');
-// } else {
+//     alert('Yes! His name is Bruce and he is great!');
+//   } else {
 //   /*console.log ('WRONG! His name is Bruce and he is amazing!');*/
-//   alert('WRONG! His name is Bruce and he is amazing!');
+//     alert('WRONG! His name is Bruce and he is amazing!');
+//   }
 // }
 
-// //third qeustion//
-// var college = prompt ('Did Cait go to Idaho State?').toLowerCase;
-// if (college === 'no' || college === 'n') {
+// bruce();
+
+// //third question//
+// function uniIdaho () {
+//   var college = prompt ('Did Cait go to Idaho State?').toLowerCase();
+//   if (college === 'no' || college === 'n') {
 //   /* console.log('Yes ' + visitorName + '. You are so smart!');*/
-//   alert('Yes ' + visitorName + '. You are so smart!');
-// } else {
-//   /*console.log ('Common ' + visitorName + '! You should know this! U of I is where it is at!');*/
-//   alert('Common ' + visitorName + '! You should know this! U of I is where it is at!');
+//     alert('Yes ' + visitorName + '. You are so smart!');
+//   } else {
+//   /*console.log ('Come on ' + visitorName + '! You should know this! U of I is where it is at!');*/
+//     alert('Come on ' + visitorName + '! You should know this! U of I is where it is at!');
+//   }
 // }
+// uniIdaho();
 
 // //fourth question//
-// var collegeSport = prompt ('Did Cait play soccer in college?').toLowerCase;
-// if (collegeSport === 'no' || collegeSport === 'n') {
-//   /*console.log ('You are right + visitorName! She ran track!');*/
-//   alert('You are right ' + visitorName + '! She ran track!');
-// } else {
-//   /*console.log ('Not quite! She ran track in college')*/
-//   alert('Not quite! She ran track in college');
-// }
+function track() {
+  var collegeSport = prompt ('Did Cait play soccer in college?').toLowerCase();
+  if (collegeSport === 'no' || collegeSport === 'n') {
+  /*console.log ('You are right + visitorName! She ran track!');*/
+    alert('You are right ' + visitorName + '! She ran track!');
+  } else {
+  /*console.log ('Not quite! She ran track in college')*/
+    alert('Not quite! She ran track in college');
+  }
+}
+
+track();
 
 // //fifth question //
-// var favHobbie = prompt ('Does Cait hate boating?').toLowerCase;
+// var favHobbie = prompt ('Does Cait hate boating?').toLowerCase();
 // if (favHobbie === 'no' || favHobbie === 'n') {
 //   /*console.log ('Correct! She is out on the water all summer long') */
 //   alert('Correct! She is out on the water all summer long');
@@ -89,30 +108,30 @@ alert('Welcome, ' + visitorName + '!');
 //   }
 // }
 
-//7th question //
+// //7th question //
 
-var songArray = ['feel it', 'always waiting', 'high beams'];
+// var songArray = ['feel it', 'always waiting', 'high beams'];
 
-var topSongs = prompt ('What is one of Caits top songs on Spotify? You have 6 attempts to guess the correct answer.').toLowerCase;
+// var topSongs = prompt ('What is one of Caits top songs on Spotify? You have 6 attempts to guess the correct answer.').toLowerCase();
 
-var songGuesses = 6;
+// var songGuesses = 6;
 
-while (songGuesses > 0) {
-  for (var i = 0; i <songArray.length; i++) {
-    if (songArray === topSongs[i])
-      alert('You are correct!' + visitorName);
-    songGuesses = 0;
-  }
-}
-songGuesses --;
-if (songGuesses !== 0 && songGuesses !== -1) {
-  alert('
-} else if (songGuesses !== 0) {
-  alert('Not quite.');
-  topSongs = prompt('Guess again!');
-} else if (songGuesses === -1) {
-  alert('The correct answers were Feel It, Always Waiting, and High Beam');
-}
+// while (songGuesses > 0) {
+//   for (var i = 0; i <songArray.length; i++) {
+//     if (songArray === topSongs[i])
+//       alert('You are correct!' + visitorName);
+//     songGuesses = 0;
+//   }
+// }
+// songGuesses --;
+// if (songGuesses !== 0 && songGuesses !== -1) {
+//   alert('
+// } else if (songGuesses !== 0) {
+//   alert('Not quite.');
+//   topSongs = prompt('Guess again!');
+// } else if (songGuesses === -1) {
+//   alert('The correct answers were Feel It, Always Waiting, and High Beam');
+// }
 
-//final message//
-alert('Thanks for playing! Cait sounds pretty cool, right ' + visitorName + '?');
+// //final message//
+// alert('Thanks for playing! Cait sounds pretty cool, right ' + visitorName + '?');
