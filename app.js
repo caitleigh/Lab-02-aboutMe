@@ -63,50 +63,58 @@ alert('Welcome, ' + visitorName + '!');
 // uniIdaho();
 
 // //fourth question//
-function track() {
-  var collegeSport = prompt ('Did Cait play soccer in college?').toLowerCase();
-  if (collegeSport === 'no' || collegeSport === 'n') {
-  /*console.log ('You are right + visitorName! She ran track!');*/
-    alert('You are right ' + visitorName + '! She ran track!');
-  } else {
-  /*console.log ('Not quite! She ran track in college')*/
-    alert('Not quite! She ran track in college');
-  }
-}
+// function track() {
+//   var collegeSport = prompt ('Did Cait play soccer in college?').toLowerCase();
+//   if (collegeSport === 'no' || collegeSport === 'n') {
+//   /*console.log ('You are right + visitorName! She ran track!');*/
+//     alert('You are right ' + visitorName + '! She ran track!');
+//   } else {
+//   /*console.log ('Not quite! She ran track in college')*/
+//     alert('Not quite! She ran track in college');
+//   }
+// }
 
-track();
+// track();
 
 // //fifth question //
-// var favHobbie = prompt ('Does Cait hate boating?').toLowerCase();
-// if (favHobbie === 'no' || favHobbie === 'n') {
+// function hobby() {
+//   var favHobby = prompt ('Does Cait hate boating?').toLowerCase();
+//   if (favHobby === 'no' || favHobby === 'n') {
 //   /*console.log ('Correct! She is out on the water all summer long') */
-//   alert('Correct! She is out on the water all summer long');
-// } else {
+//     alert('Correct! She is out on the water all summer long');
+//   } else {
 //   /*console.log ('So so wrong! She loves boating!') */
-//   alert('So so wrong! She loves boating!');
+//     alert('SO so wrong! She LOVES boating!');
+//   }
 // }
+
+// hobby();
 
 // //Sixth question//
 
-// var maxCount = 5;
-// var number = parseInt(prompt ('What year did Cait graduate from U of I'));
-// while (maxCount > 0) {
-//   if (maxCount === 1) {
-//     alert('The correct answer is 2014');
-//     break;
-//   } else if (number > 2014) {
-//     alert(number + ' is too high');
-//     number = parseInt(prompt('Guess again'));
-//     maxCount--;
-//   } else if (number < 2014) {
-//     alert(number + ' is too low');
-//     number = parseInt(prompt('Guess again'));
-//     maxCount--;
-//   } else if (number === 2014) {
-//     alert(number + ' is correct');
-//     break;
-//   }
-// }
+function graduationYear() {
+  var maxCount = 5;
+  var number = parseInt(prompt ('What year did Cait graduate from U of I'));
+  while (maxCount > 0) {
+    if (maxCount === 1) {
+      alert('The correct answer is 2014');
+      break;
+    } else if (number > 2014) {
+      alert(number + ' is too high');
+      number = parseInt(prompt('Guess again'));
+      maxCount--;
+    } else if (number < 2014) {
+      alert(number + ' is too low');
+      number = parseInt(prompt('Guess again'));
+      maxCount--;
+    } else if (number === 2014) {
+      alert(number + ' is correct');
+      break;
+    }
+  }
+}
+graduationYear();
+
 
 // //7th question //
 
