@@ -92,54 +92,61 @@ alert('Welcome, ' + visitorName + '!');
 
 // //Sixth question//
 
-function graduationYear() {
-  var maxCount = 5;
-  var number = parseInt(prompt ('What year did Cait graduate from U of I'));
-  while (maxCount > 0) {
-    if (maxCount === 1) {
-      alert('The correct answer is 2014');
-      break;
-    } else if (number > 2014) {
-      alert(number + ' is too high');
-      number = parseInt(prompt('Guess again'));
-      maxCount--;
-    } else if (number < 2014) {
-      alert(number + ' is too low');
-      number = parseInt(prompt('Guess again'));
-      maxCount--;
-    } else if (number === 2014) {
-      alert(number + ' is correct');
-      break;
-    }
-  }
-}
-graduationYear();
+// function graduationYear() {
+//   var maxCount = 5;
+//   var number = parseInt(prompt ('What year did Cait graduate from U of I'));
+//   while (maxCount > 0) {
+//     if (maxCount === 1) {
+//       alert('The correct answer is 2014');
+//       break;
+//     } else if (number > 2014) {
+//       alert(number + ' is too high');
+//       number = parseInt(prompt('Guess again'));
+//       maxCount--;
+//     } else if (number < 2014) {
+//       alert(number + ' is too low');
+//       number = parseInt(prompt('Guess again'));
+//       maxCount--;
+//     } else if (number === 2014) {
+//       alert(number + ' is correct');
+//       break;
+//     }
+//   }
+// }
+// graduationYear();
 
 
 // //7th question //
 
-// var songArray = ['feel it', 'always waiting', 'high beams'];
+function tunes() {
+  var songArray = ['feel it', 'always waiting', 'high beams'];
 
-// var topSongs = prompt ('What is one of Caits top songs on Spotify? You have 6 attempts to guess the correct answer.').toLowerCase();
+  var topSongs = prompt ('What is one of Caits top songs on Spotify? You have 6 attempts to guess the correct answer.').toLowerCase();
 
-// var songGuesses = 6;
+  var songGuesses = 6;
 
-// while (songGuesses > 0) {
-//   for (var i = 0; i <songArray.length; i++) {
-//     if (songArray === topSongs[i])
-//       alert('You are correct!' + visitorName);
-//     songGuesses = 0;
-//   }
-// }
-// songGuesses --;
-// if (songGuesses !== 0 && songGuesses !== -1) {
-//   alert('
-// } else if (songGuesses !== 0) {
-//   alert('Not quite.');
-//   topSongs = prompt('Guess again!');
-// } else if (songGuesses === -1) {
-//   alert('The correct answers were Feel It, Always Waiting, and High Beam');
-// }
+  while (songGuesses > 0) {
+    for (var i = 0; i < songArray.length; i++) {
+      console.log('Check guess: ' + topSongs);
+      if (topSongs === songArray[i]) {
+        console.log('Check again' + topSongs);
+        alert('You are correct, ' + visitorName + '!');
+        songGuesses = 0;
+        break;
+      }
+    }
+    songGuesses --;
+    if (songGuesses !== 0 && songGuesses !== -1) {
+      topSongs = prompt('Not quite. Guess again!');
+    } else if (songGuesses === 0) {
+      console.log('Sees no right answer');
+    }
+  }
+
+  alert('The correct answers were Feel It, Always Waiting, and High Beam');
+}
+
+tunes();
 
 // //final message//
 // alert('Thanks for playing! Cait sounds pretty cool, right ' + visitorName + '?');
