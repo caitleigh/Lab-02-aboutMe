@@ -1,12 +1,49 @@
 
 body {
+    padding: 5em;
     background-color: grey;
-    color: white
+    background-image: url(Waterbackground.jpg);
+
 }
+main {
+    background-color:grey;
+    border-style: double;
+    border-width: 15px;
+    border-color: aquamarine; 
+    color: white;
+    font-family: Ariel, Veranda, sans-serif;
+    color: white;
+    padding: 10px;
+}
+
 h1 {
-    background-color: pink;
+    background-color: aquamarine;
     color: grey;
+    font-size: 50px;
 }
 h2 {
-    color: pink;
+    color:aquamarine;
+}
+
+
+
+div {
+    color: lightcoral;
+}
+
+footer {
+    color: lightcoral;
+    margin: 10px;
+}
+
+.Cait {
+    color: aquamarine;
+}
+
+.headshot {
+    float:left;
+    margin:10px;
+    height: 10em;
+    width:auto;
+
 }
