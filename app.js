@@ -19,7 +19,7 @@ if (doYouWantToLearn === 'yes' || doYouWantToLearn === 'y') {
   console.log('Great! Lets go!'+ doYouWantToLearn);
   alert('Great! Lets go!');
 } else {
-  console.log('Too bad... you are going to learn today');
+  console.log('Too bad... you\'re gonna learn today');
   alert('Too bad... you are going to learn today');
 }
 
@@ -40,7 +40,7 @@ hometown();
 
 //second question//
 function bruce () {
-  var catName = prompt('Is Cait\'s cat\'s name Bruce?').toLowerCase();
+  var catName = prompt('Is Cait\'s cats name Bruce?').toLowerCase();
   if (catName === 'yes' || catName === 'y') {
   /*console.log ('Yes! His name is Bruce and he is great!');*/
     alert('Yes! His name is Bruce and he is great!');
@@ -127,10 +127,8 @@ graduationYear();
 //7th question //
 
 function tunes() {
-  var songArray = ['feel it', 'always waiting', 'high beams'];
-
+  var songArray = ['atleins', 'chainsmoking', 'high beams'];
   var topSongs = prompt ('What is one of Caits top songs on Spotify? You have 6 attempts to guess the correct answer.').toLowerCase();
-
   var songGuesses = 6;
 
   while (songGuesses > 0) {
@@ -152,11 +150,11 @@ function tunes() {
     }
   }
 
-  alert('The correct answers were Feel It, Always Waiting, and High Beams');
+  alert('The correct answers were ATLiens, Chainsmoking, and High Beams');
 }
 
 tunes();
 
 //final message//
-alert('Thanks for playing! Cait sounds pretty cool, right ' + visitorName + '?' + ' You got ' + correctAnswers + ' right!');
+alert('Thanks for playing! Cait sounds pretty cool, right ' + visitorName + '?' + ' You got ' + correctAnswers + ' out of 7 right!');
 // console.log ('Thank you for playing you got correct answers right' , correctAnswers)

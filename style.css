@@ -1,12 +1,12 @@
 
 body {
     padding: 5em;
-    background-color: grey;
     background-image: url(Waterbackground.jpg);
 
 }
 main {
-    background-color:grey;
+    background-color: rgb(128, 128, 128);
+    background-color: rgba(172, 170, 170, 0.829);
     border-style: double;
     border-width: 15px;
     border-color: aquamarine; 
@@ -22,13 +22,16 @@ h1 {
     font-size: 50px;
 }
 h2 {
-    color:aquamarine;
+    color: rgb(255, 132, 132);
+    text-shadow: 2px 2px 7px #111111;
 }
 
 
 
 div {
-    color: lightcoral;
+    color: aquamarine;
+    font-weight: bold;
+    font-style: italic;
 }
 
 footer {
@@ -37,7 +40,7 @@ footer {
 }
 
 .Cait {
-    color: aquamarine;
+    color: lightcoral;
 }
 
 .headshot {
