@@ -9,93 +9,93 @@ alert('Welcome, ' + visitorName + '!');
 
 var correctAnswers = 0;
 
-// //Asking if they would like to learn about me//
-// var doYouWantToLearn = prompt('Do you want to learn about me?').toLowerCase();
-// console.log('Do you want to learn about me ' + visitorName + '?');
-// console.log(doYouWantToLearn);
+//Asking if they would like to learn about me//
+var doYouWantToLearn = prompt('Do you want to learn about me?').toLowerCase();
+console.log('Do you want to learn about me ' + visitorName + '?');
+console.log(doYouWantToLearn);
 
-// if (doYouWantToLearn === 'yes' || doYouWantToLearn === 'y') {
-//   console.log(doYouWantToLearn);
-//   console.log('Great! Lets go!'+ doYouWantToLearn);
-//   alert('Great! Lets go!');
-// } else {
-//   console.log('Too bad... you\'re gonna learn today');
-//   alert('Too bad... you are going to learn today');
-// }
+if (doYouWantToLearn === 'yes' || doYouWantToLearn === 'y') {
+  console.log(doYouWantToLearn);
+  console.log('Great! Lets go!'+ doYouWantToLearn);
+  alert('Great! Lets go!');
+} else {
+  console.log('Too bad... you\'re gonna learn today');
+  alert('Too bad... you are going to learn today');
+}
 
-// //first question//
-// function hometown() {
-//   var caitsHometown = prompt('Is Cait from Gig Harbor').toLowerCase();
-//   if (caitsHometown === 'yes' || caitsHometown === 'y') {
-//   /*console.log('Correct!');*/
-//     alert('Correct!');
-//     correctAnswers ++;
-//   } else {
-//   /*console.log('Oops, not quite. She IS from Gig Harbor');*/
-//     alert('Oops, not quite. She IS from Gig Harbor');
-//   }
-// }
-// hometown();
+//first question//
+function hometown() {
+  var caitsHometown = prompt('Is Cait from Gig Harbor').toLowerCase();
+  if (caitsHometown === 'yes' || caitsHometown === 'y') {
+  /*console.log('Correct!');*/
+    alert('Correct!');
+    correctAnswers ++;
+  } else {
+  /*console.log('Oops, not quite. She IS from Gig Harbor');*/
+    alert('Oops, not quite. She IS from Gig Harbor');
+  }
+}
+hometown();
 
 
-// //second question//
-// function bruce () {
-//   var catName = prompt('Is Cait\'s cats name Bruce?').toLowerCase();
-//   if (catName === 'yes' || catName === 'y') {
-//   /*console.log ('Yes! His name is Bruce and he is great!');*/
-//     alert('Yes! His name is Bruce and he is great!');
-//     correctAnswers ++;
-//   } else {
-//   /*console.log ('WRONG! His name is Bruce and he is amazing!');*/
-//     alert('WRONG! His name is Bruce and he is amazing!');
-//   }
-// }
+//second question//
+function bruce () {
+  var catName = prompt('Is Cait\'s cats name Bruce?').toLowerCase();
+  if (catName === 'yes' || catName === 'y') {
+  /*console.log ('Yes! His name is Bruce and he is great!');*/
+    alert('Yes! His name is Bruce and he is great!');
+    correctAnswers ++;
+  } else {
+  /*console.log ('WRONG! His name is Bruce and he is amazing!');*/
+    alert('WRONG! His name is Bruce and he is amazing!');
+  }
+}
 
-// bruce();
+bruce();
 
-// //third question//
-// function uniIdaho () {
-//   var college = prompt ('Did Cait go to Idaho State?').toLowerCase();
-//   if (college === 'no' || college === 'n') {
-//   /* console.log('Yes ' + visitorName + '. You are so smart!');*/
-//     alert('Yes ' + visitorName + '. You are so smart!');
-//     correctAnswers ++;
-//   } else {
-//   /*console.log ('Come on ' + visitorName + '! You should know this! U of I is where it is at!');*/
-//     alert('Come on ' + visitorName + '! You should know this! U of I is where it is at!');
-//   }
-// }
-// uniIdaho();
+//third question//
+function uniIdaho () {
+  var college = prompt ('Did Cait go to Idaho State?').toLowerCase();
+  if (college === 'no' || college === 'n') {
+  /* console.log('Yes ' + visitorName + '. You are so smart!');*/
+    alert('Yes ' + visitorName + '. You are so smart!');
+    correctAnswers ++;
+  } else {
+  /*console.log ('Come on ' + visitorName + '! You should know this! U of I is where it is at!');*/
+    alert('Come on ' + visitorName + '! You should know this! U of I is where it is at!');
+  }
+}
+uniIdaho();
 
-// //fourth question//
-// function track() {
-//   var collegeSport = prompt ('Did Cait play soccer in college?').toLowerCase();
-//   if (collegeSport === 'no' || collegeSport === 'n') {
-//   /*console.log ('You are right + visitorName! She ran track!');*/
-//     alert('You are right ' + visitorName + '! She ran track!');
-//     correctAnswers ++;
-//   } else {
-//   /*console.log ('Not quite! She ran track in college')*/
-//     alert('Not quite! She ran track in college');
-//   }
-// }
+//fourth question//
+function track() {
+  var collegeSport = prompt ('Did Cait play soccer in college?').toLowerCase();
+  if (collegeSport === 'no' || collegeSport === 'n') {
+  /*console.log ('You are right + visitorName! She ran track!');*/
+    alert('You are right ' + visitorName + '! She ran track!');
+    correctAnswers ++;
+  } else {
+  /*console.log ('Not quite! She ran track in college')*/
+    alert('Not quite! She ran track in college');
+  }
+}
 
-// track();
+track();
 
-// //fifth question //
-// function hobby() {
-//   var favHobby = prompt ('Does Cait hate boating?').toLowerCase();
-//   if (favHobby === 'no' || favHobby === 'n') {
-//   /*console.log ('Correct! She is out on the water all summer long') */
-//     alert('Correct! She is out on the water all summer long');
-//     correctAnswers ++;
-//   } else {
-//   /*console.log ('So so wrong! She loves boating!') */
-//     alert('SO so wrong! She LOVES boating!');
-//   }
-// }
+//fifth question //
+function hobby() {
+  var favHobby = prompt ('Does Cait hate boating?').toLowerCase();
+  if (favHobby === 'no' || favHobby === 'n') {
+  /*console.log ('Correct! She is out on the water all summer long') */
+    alert('Correct! She is out on the water all summer long');
+    correctAnswers ++;
+  } else {
+  /*console.log ('So so wrong! She loves boating!') */
+    alert('SO so wrong! She LOVES boating!');
+  }
+}
 
-// hobby();
+hobby();
 
 //Sixth question//
 
